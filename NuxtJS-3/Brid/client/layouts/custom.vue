@@ -3,7 +3,7 @@
     <v-app>
       <!-- Header 가로로 먼저나누고 -->
       <nav>
-        <v-toolbar dark color="green">
+        <v-toolbar prominent dark color="green">
           <v-toolbar-title>
             <!-- 로고 부분의 링크 -->
             <nuxt-link to="/">NodeBird</nuxt-link>
@@ -11,11 +11,11 @@
           <v-spacer></v-spacer>
           <v-toolbar-items>
             <!-- Search Bar, Search icon => prepend-icon="mdi-magnify"　mdi를 앞에 붙여줘야한다. -->
-            <v-text-field label="검색" hide-details prepend-icon="mdi-magnify" :style="{ display: 'flex', alignItems: 'center' }" />
-            <v-btn text nuxt to="/profile" :style="{ display: 'flex', alignItems: 'center' }">
+            <v-text-field label="검색" hide-details prepend-icon="mdi-magnify" />
+            <v-btn text nuxt to="/profile">
               <div>프로필</div>
             </v-btn>
-            <v-btn text nuxt to="/signup" :style="{ display: 'flex', alignItems: 'center' }">
+            <v-btn text nuxt to="/signup">
               <div>회원가입</div>
             </v-btn>
           </v-toolbar-items>
